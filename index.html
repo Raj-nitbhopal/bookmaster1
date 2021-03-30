@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, intial-scale=1.0">
+        <link rel="stylesheet" href="bookMaster.css">
+        <link rel="JavaScript" href="index.js">
+
+    </head>
+    <body>
+            <form id="bookMaster" action="index.js" class="inputArea">
+                <fieldset>
+                    <legend><h3>Book Master</h3></legend>
+                    <div id="line1">
+                            <label style="margin-right: 20px;"for="bookName">Book Name</label>    
+                            <input style="margin-right: 50px;" type="text" id="bookName" name = "Book Name" reqiured>
+                            <label style="margin-right: 20px;"for="authorName">Author Name</label>    
+                            <input style="margin-right: 50px;" type="text" id="authorName" name = "Author Name" reqiured>
+                            <label style="margin-right: 20px;"for="category">Category</label>    
+                            <select style="margin-right: 50px;" name="" id="category">
+                                <option value="computerScience" id="computerScience">Computer Science</option>
+                                <option value="novel" id="novel">Novel</option>
+                                <option value="historical" id="historical">Historical</option>
+                                <option value="architectral" id="architectral">Architectral</option>
+                                <option value="medicalScience" id="medicalScience">Medical Science</option>
+                                <option value="darama" id="drama">Drama</option>
+                                <option value="poetry" id="poetry">Poetry</option>
+                                <option value="others" id="others">Others</option>
+    
+                            </select>
+                            <label style="margin-right: 20px;"for="dop">Date of Purchase</label>    
+                            <input style="margin-right: 50px;" type="date" id="dop" name = "dop" reqiured>
+                    </div>
+                    <!-- <div id="line2"> -->
+                            <label style="margin-right: 20px;margin-top: 10px;"for="isbn">ISBN Number</label>    
+                            <input  style="margin-right: 50px;margin-top: 10px;"type="text" class="isbn" id="isbn" name = "ISBN Number" reqiured>
+                            <label style="margin-right: 20px;margin-top: 10px;"for="rack">Rack Number</label>    
+                            <select style="margin-right: 50px;margin-top: 10px;"name="rack" id="rack">
+                                <option value="rack1" id="rack1">Rack-1A</option>
+                                <option value="rack2" id="rack2">Rack-1B</option>
+                                <option value="rack3" id="rack3">Rack-2A</option>
+                                <option value="rack4" id="rack4">Rack-2B</option>
+                                <option value="rack5" id="rack5">Rack-3A</option>
+                                <option value="rack6" id="rack6">Rack-3B</option>
+                                <option value="rack7" id="rack7">Rack-4A</option>
+                                <option value="rack8" id="rack8">Rack-4B</option>
+                            </select>          
+                    <!-- </div> -->
+                    <br><br>
+                    <div class ="Button">
+                        <input  id ="btn1" type = "submit" onclick="Dispaly()" value="Submit">
+                        <input id="btn2" type ="submit" onclick="Clear()" value="Clear">
+                    </div>
+                </fieldset>      
+            </form>
+            <fieldset>
+                <legend><h3>Book Master Table</h3></legend>
+                <table id="tableBody">
+                    <thead>
+                        <tr>
+                        <th>S No.</th>
+                        <th>Book Name</th>
+                        <th>Author Name</th>
+                        <th>Category</th>
+                        <th>Date of Purchase</th>
+                        <th>ISBN Number</th>
+                        <th>Rack Number</th>
+                    </tr>
+                    </thead>
+                    <tbody id='tableBody'></tbody>
+                </table>
+            </fieldset>
+    </body>
+</html>

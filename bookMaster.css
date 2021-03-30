@@ -1,0 +1,113 @@
+#line1{
+display: flex;
+width: 100%;
+}
+#line1::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#bookMaster{
+    width: 100%;
+    height: 100%;
+    background-color: azure;
+
+}
+.bookName{
+    padding:5px;
+    /* margin: 5px;  */
+    width: 200px;
+}
+.authorName{
+    padding:5px;
+     /* margin: 5px; */
+     width: 200px; 
+}
+.category{
+    padding:5px;
+     /* margin: 5px;  */
+     width: 200px;
+}
+#line2{
+    display: flex;
+    width: 100%;
+    }
+    #line2::before{
+        content: "";
+        background-color: black;
+        position: absolute;
+        top:0px;
+        left:0px;
+        height: 100%;
+        width:100%;
+        z-index: -1;
+        opacity: 0.7;
+    }
+    .dop{
+        padding:5px;
+          margin: 5px;  
+         width: 200px;
+    }
+    .isbn{
+        padding:5px;
+        margin: 5px;  
+         width: 200px;
+    }
+    .rack{
+        padding:5px;
+          margin: 5px;  
+         width: 200px;
+    }
+    option{
+        width: 200px;
+    }
+    .Button{
+    /* border: 2px solid black; */
+    width: 300px;
+    margin-left: 600px;
+    height: 35px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    
+}
+.Button::before{
+    content: "";
+    background-color:blanchedalmond;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#btn1
+{
+    margin: 5px;
+    width:100px;
+    height:30px;
+    border-radius: 5px;
+}
+#btn2{
+    margin: 10px;
+    width:100px;
+    height:30px;
+    border-radius: 5px;
+}
+#tableBody{
+    width: 100%;
+    border-spacing: 5px;
+
+}
+#tableBody tr{
+    border-spacing: 5px;
+    border: 2px solid black;
+    
+}
